@@ -86,11 +86,17 @@ export default function CTA(props) {
         width={350}
         height={300}
         data={[
-          { name: "1st", value: 1.1 * variables["annualSavings"] },
-          { name: "2nd", value: 1.21 * variables["annualSavings"] },
-          { name: "3rd", value: 1.343 * variables["annualSavings"] },
-          { name: "4th", value: 1.49 * variables["annualSavings"] },
-          { name: "5th", value: 1.655 * variables["annualSavings"] },
+          { name: "1st", value: Math.round(1.1 * variables["annualSavings"]) },
+          { name: "2nd", value: Math.round(1.21 * variables["annualSavings"]) },
+          {
+            name: "3rd",
+            value: Math.round(1.343 * variables["annualSavings"]),
+          },
+          { name: "4th", value: Math.round(1.49 * variables["annualSavings"]) },
+          {
+            name: "5th",
+            value: Math.round(1.655 * variables["annualSavings"]),
+          },
         ]}
         margin={{
           top: 32,
